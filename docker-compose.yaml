@@ -1,0 +1,9 @@
+version: "3.9"
+   
+services:
+  node:
+    command: tail -F README.md
+    build: .
+    volumes:
+      - .:/camera-node
+    network_mode: "host"
